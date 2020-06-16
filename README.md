@@ -31,6 +31,7 @@ The generalization of object detectors is the key to the success of the autonomo
 
 ## Datasets
 ### COCO Dataset
+The majority of the state of the art, modern object detection, and segmentation models are trained and tested on this Common Objects in Context Dataset, often referred to as the COCO dataset. For our problem statement, we need to detect Common Objects on roads like Car, Person, Motorcycle, Animals, Truck, Train, etc. that are available in this dataset. This dataset has a high number of images to the number of the class ratio that helps in training. The modern architectures trained on this dataset can detect the objects in low light conditions but only with deep architectures, also the complexity of the model architecture is high because of the higher number of redundant classes.
 ### Indian Driving Dataset
 ### BDD Dataset
 
