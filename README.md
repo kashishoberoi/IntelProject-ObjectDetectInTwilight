@@ -8,6 +8,9 @@ The solution would be able to detect common objects like cars, two-wheelers, aut
 Target performance for an ideal scenario would have the algorithm running at 30Hz.
 
 ## Object Detection: An Overview
+Object Detection, localizing objects in image frames, has been the focus of the Deep Learning, and Computer vision fraternity for decades now.  It plays a crucial role in the autonomous industry and the algorithms here can be used for Image classification, which indeed can be used almost everywhere. 
+The major problem faced during Object Detection using state of the art models is the data available works well for the test images but ground truth images can have outliers and the image context can change which can adversely affect the output.
+
 
 ## Previous Works
 ### VGG-16
