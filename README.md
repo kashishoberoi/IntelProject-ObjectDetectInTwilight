@@ -23,8 +23,12 @@ The generalization of object detectors is the key to the success of the autonomo
 ## Previous Works
 ### VGG-16
 ### R-CNN
+R-CNN is short for “Region-based Convolutional Neural Networks”. The basic task of RCNN is to correctly identify the object present in an image via bounding box. While detecting, the issue faced is that there is a huge number of regions within the image as the object of interest might have different spatial locations.<br/>
+R-CNN helps in identifying a manageable number of bounding-box object region using <i>selective search algorithm.</i> After this the identified regions are wrapped and fed into the CNN resulting in a vector output. It extracts CNN features from each region independently for classification using SVM.<br/> Along with predicting object within the region, the algorithm also predicts the offset values (x1 y1 x2 y2) to increase the precision of the bounding box and help in adjusting the bounding box of the region proposal.
+Follwing 
+
 ### ResNet
-The ResNet that stands for Residual Neural Network is an Artificial Neural Network that alleviates the problems present with the Deep Network. This is done by implementing a new neural network layer - <b>The Residual Block.</b><br /> Following is the image representing Residual Block: a building block.<br />
+The ResNet that stands for "Residual Neural Network" is an Artificial Neural Network that alleviates the problems present with the Deep Network. This is done by implementing a new neural network layer - <b>The Residual Block.</b><br /> Following is the image representing Residual Block: a building block.<br />
 <img src="images/image_1.png" width="300"><br />
 ResNet solves many problems but one of the major issues solved with this was the <b>vanishing gradient</b> in the deep neural network which was caused due to very deep network and thus making them hard to train. This further results in the shrinking of the gradient and the weights not being updated. Hence, ResNet utilizes <i>skip connection</i> so that the gradient can directly be propagated backward from later layers to initial filters.<br/>
 In skip connection, the convolution layers are stacked one over the other, same way as before but now we also add the original input to the output of the later convolution block.<br/>
