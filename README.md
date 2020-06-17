@@ -28,7 +28,7 @@ The ResNet that stands for Residual Neural Network is an Artificial Neural Netwo
 <img src="images/image_1.png" width="300"><br />
 ResNet solves many problems but one of the major issues solved with this was the <b>vanishing gradient</b> in the deep neural network which was caused due to very deep network and thus making them hard to train. This further results in the shrinking of the gradient and the weights not being updated. Hence, ResNet utilizes <i>skip connection</i> so that the gradient can directly be propagated backward from later layers to initial filters.<br/>
 In skip connection the convolution layers are stacked one over the other, same way as before but now we also add the original input to the output of the later convolution block.
-
+The block or the residual block used in ResNet depends on whether or not the input is in dimension with the output. If the dimensions are same then <b><i>the identity block</i></b> is implemented. And, if the input/output dimensions don't match up with each other then <b><i>the concolutional block</i></b> is implemented.<br/>
 Here is the architecture of ResNet model that explains it in a better way.<br />
 <img src="images/Resnet_Architecture.png"><br />
 
