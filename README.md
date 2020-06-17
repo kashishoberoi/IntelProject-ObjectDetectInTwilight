@@ -26,8 +26,10 @@ The generalization of object detectors is the key to the success of the autonomo
 ### ResNet
 The ResNet that stands for Residual Neural Network is an Artificial Neural Network that alleviates the problems present with the Deep Network. This is done by implementing a new neural network layer - <b>The Residual Block.</b><br /> Following is the image representing Residual Block: a building block.<br />
 <img src="images/image_1.png" width="300"><br />
-ResNet solves many problems but one of the major issues solved with this was the <b>vanishing gradient</b> in the deep neural network which was caused due to very deep network. This further results in the shrinking of the gradient and the weights not being updated. Hence, ResNet utilizes <i>skip connection</i> so that the gradient can directly propagate backward from later layers to initial filters.<br/>
+ResNet solves many problems but one of the major issues solved with this was the <b>vanishing gradient</b> in the deep neural network which was caused due to very deep network and thus making them hard to train. This further results in the shrinking of the gradient and the weights not being updated. Hence, ResNet utilizes <i>skip connection</i> so that the gradient can directly be propagated backward from later layers to initial filters.<br/>
+In skip connection the convolution layers are stacked one over the other, same way as before but now we also add the original input to the output of the later convolution block.
 
+For best results, it is recommended that the activation function is applied after the skip connection.
 ### Densenet
 ### Squeezenet
 ### MobileNet
@@ -35,7 +37,7 @@ ResNet solves many problems but one of the major issues solved with this was the
 
 ## Datasets
 ### COCO Dataset
-The majority of the state of the art, modern object detection, and segmentation models are trained and tested on this Common Objects in Context Dataset, often referred to as the COCO dataset. For our problem statement, we need to detect Common Objects on roads like Car, Person, Motorcycle, Animals, Truck, Train, etc. that are available in this dataset. This dataset has a high number of images to the number of the class ratio that helps in training. The modern architectures trained on this dataset can detect the objects in low light conditions but only with deep architectures, also the complexity of the model architecture is high because of the higher number of redundant classes.
+The majority of the state of the art, modern object detection, and segmentation models are trained and tested on this Common Objects in Context Dataset, often referred to as the COCO dataset. For our problem statement, we need to detect Common Objects on roads like Car, Person, Motorcycle, Animals, Truck, Train, etc. that are available in this dataset. This dataset has a high number of images to the number of the class ratio that helps in training. The modern architectures trained on this dataset can detect the objects in low light conditions but only with deep architectures, also the complexity of the model architecture is high because of the higher number of redundant classes. 
 ### Indian Driving Dataset
 ### BDD Dataset
 
