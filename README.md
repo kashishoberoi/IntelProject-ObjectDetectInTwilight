@@ -23,7 +23,8 @@ The generalization of object detectors is the key to the success of the autonomo
 ## Previous Works
 ### VGG-16
 ### R-CNN
-### Resnet 
+### ResNet
+The ResNet that stands for Residual Neural Network is an Artificial Neural Network which alliviate the problems present with the Deep Network. This is done by implementing a new neural network layer - <b>The Residual Block</b> 
 ### Densenet
 ### Squeezenet
 ### MobileNet
