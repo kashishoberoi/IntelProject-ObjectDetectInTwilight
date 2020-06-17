@@ -29,6 +29,9 @@ The ResNet that stands for Residual Neural Network is an Artificial Neural Netwo
 ResNet solves many problems but one of the major issues solved with this was the <b>vanishing gradient</b> in the deep neural network which was caused due to very deep network and thus making them hard to train. This further results in the shrinking of the gradient and the weights not being updated. Hence, ResNet utilizes <i>skip connection</i> so that the gradient can directly be propagated backward from later layers to initial filters.<br/>
 In skip connection the convolution layers are stacked one over the other, same way as before but now we also add the original input to the output of the later convolution block.
 
+Here is the architecture of ResNet model that explains it in a better way.
+<img src="images/Resnet_Architecture.png" width="300"><br />
+
 For best results, it is recommended that the activation function is applied after the skip connection.
 ### Densenet
 ### Squeezenet
