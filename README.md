@@ -22,7 +22,7 @@ The generalization of object detectors is the key to the success of the autonomo
 
 ## Previous Works
 ### VGG-16
-VGG16 also known as OxfordNet, is a convolutional neural network(CNN) model. This model was presented by Simonyan and Zisserman in their paper "Very Deep Convolutional Networks for Large Scale Image Recognition". This model can achieve very high accuracy (somewhat 92-93%) in ImageNet, that is the dataset of more than 14 million images which approximately contains more than 20,000 categories and belongs to 1000 classes. The 16 in the VGG16 stands for the 16 layers which contain weights.<br/>
+VGG16 also known as OxfordNet, is a convolutional neural network(CNN) model. This model was presented by Simonyan and Zisserman in their paper "Very Deep Convolutional Networks for Large Scale Image Recognition". This model can achieve very high accuracy (somewhat 92-93%) in ImageNet, that is the dataset of more than 14 million images which approximately contains more than 20,000 categories and belongs to 1000 classes. The 16 in the VGG16 stands for the 16 layers, which contain weights. Here's the architecture of VGG16 model.<br/>
 <img src="images/VGG16_architecture.png"><br />
 A distinctive quality of VGG16 is that it doesn't have a large number of hyper-parameters, instead it has convolution layers of 3x3 filter with a stride 1 where the padding used was same along with the maxpool layer of 2x2 filter of stride 2.<br/>
 ### R-CNN
