@@ -22,6 +22,7 @@ The generalization of object detectors is the key to the success of the autonomo
 
 ## Previous Works
 ### VGG-16
+VGG16 also known as OxfordNet, is a convolutional neural network(CNN) model. This model was presented by Simonyan and Zisserman in their paper "Very Deep Convolutional Networks for Large Scale Image Recognition".
 ### R-CNN
 R-CNN is short for “Region-based Convolutional Neural Networks”. The basic task of RCNN is to correctly identify the object present in an image via the bounding box. While detecting, the issue faced is that there is a huge number of regions within the image as the object of interest might have different spatial locations.<br/>
 R-CNN helps in identifying a manageable number of bounding-box object region using <i>selective search algorithm.</i> After this, the identified regions are wrapped and fed into CNN resulting in a vector output. It extracts CNN features from each region independently for classification using SVM to see what object the image in the box is. The box runs through a linear regression model to obtain a box with tighter coordinates once the classification of the object is done.<br/> Along with predicting object within the region, the algorithm also predicts the offset values (x1 y1 x2 y2) to increase the precision of the bounding box and help in adjusting the bounding box of the region proposal.<br />
