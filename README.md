@@ -45,7 +45,7 @@ Here is the architecture of ResNet model that explains it in a better way.<br />
 For best results, it is recommended that the activation function is applied after the skip connection.<br/>
 ### DenseNet
 DenseNet also known as Densely Connected Convolutional Network, is in a way a logical extension of ResNet.<br/>
-<img src="images/Densenet_Architecture.jpg"><br />
+<img src="images/DenseNet_architecture.jpg"><br />
 ### Squeezenet
 Deep convolutional neural networks (CNNs) concentrate essentially on the improvement of accuracy.
 There are multiple architectures of CNN that can achieve equivalent accuracy with compressed architectural design like SqueezeNet with the advantage of lower communication during distributed traning across the servers, lesser bandwidth to autonomous car from cloud and more easy to deploy on FPGA. It contains comperatively smaller no. of parameters and can achieve AlexNet kind of accuracy on Imagenet image classification dataset. Squeezenet is compatible in a computer memory with ease of transmission over a computer network. SqueezeNet is also extended  to other applications such as semantic segmentation of images.
