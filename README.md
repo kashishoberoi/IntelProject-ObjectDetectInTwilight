@@ -45,6 +45,15 @@ Here is the architecture of ResNet model that explains it in a better way.<br />
 For best results, it is recommended that the activation function is applied after the skip connection.<br/>
 ### Densenet
 ### Squeezenet
+Deep convolutional neural networks (CNNs) concentrate essentially on the improvement of accuracy.
+There are multiple architectures of CNN that can achieve equivalent accuracy with compressed architectural design like SqueezeNet with the advantage of lower communication during distributed traning across the servers, lesser bandwidth to autonomous car from cloud and more easy to deploy on FPGA. It contains comperatively smaller no. of parameters and can achieve AlexNet kind of accuracy on Imagenet image classification dataset. Squeezenet is compatible in a computer memory with ease of transmission over a computer network. SqueezeNet is also extended  to other applications such as semantic segmentation of images.
+By replacing conventional 3x3 filters with 1x1 convolutional filters, the network could be made smaller as 1x1 filters has less number of parametrs and also looks at only one pixel at one time. Fire Module are the building block that are used in SqueezeNet.
+It comprises of squeeze layers that contains only 1x1 filters feeding to the expand layer of a mix of 1x1 and 3x3 convolution filters.The number of filters in expand layer must be more than the number of filters in squeeze layer.
+<br/>
+<img src="images/3.png"><br />
+It has a standalone convolution layer (conv1), that are followed by 8 Fire modules (fire2-9), ending with a final conv layer (conv10). The idea is to gradually increase the number of filters per fire module to the overall network. With a stride of 2 after layers conv1, fire4, fire8, and conv10, it performs max-pooling these relatively late placements of pooling are per the downsample late in the network so that convolution layers have large activation maps.
+<br/>
+<img src="images/1.png"><br />
 ### MobileNet
 ### YOLOv3
 "You Look Only Once" is yet another and one of the fastest algorithms for object detection which is of much use when we want to detect objects in real-time.   
