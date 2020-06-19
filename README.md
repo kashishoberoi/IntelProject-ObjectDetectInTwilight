@@ -44,7 +44,7 @@ Here is the architecture of ResNet model that explains it in a better way.<br />
 <img src="images/Resnet_Architecture.png"><br />
 For best results, it is recommended that the activation function is applied after the skip connection.<br/>
 ### DenseNet
-DenseNet also known as Densely Connected Convolutional Network, is in a way a logical extension of ResNet.<br/>
+DenseNet also known as Densely Connected Convolutional Network, is in a way a logical extension of ResNet. It is a network architecture which connects every layer to every other layer in a feed-forward fashion, hence improving the gradient propagation. For example, usually in a traditional convolutional network with L layers will have L connections(one between each layer and its following layer), but here in this network there will be L(L+1)/2 direct connnections, thus connecting all layers directly with each other.<br/>
 <img src="images/DenseNet_architecture.jpg"><br />
 ### Squeezenet
 Deep convolutional neural networks (CNNs) concentrate essentially on the improvement of accuracy.
