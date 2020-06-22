@@ -59,6 +59,19 @@ It has a standalone convolution layer (conv1), that are followed by 8 Fire modul
 <br/>
 <img src="images/1.png"><br />
 ### MobileNet
+Mobilenet is a CNN architecture that is suitable for image classification, mobile and embedded applications. It is a class of efficient models that are based on streamline architecture that applies the concept of depthwise separable convolution for the construction of lightweight neural networks and where there is a lack of computing power.  
+<br/>
+<img src="images/Mn1.png"><br />
+This network has an efficient network with a set of two parameters for the construction of low latency models with the 
+ease of designing requirements for embedded and mobile applications. 
+MobileNet constructs the descriptions of the two model shrinking hyperparameters for lesser computational costs
+that are width multiplier and resolution multiplier.
+It makes use of 3x3 depthwise separable convolutions that takes between 8 to 9 times lesser computation than the standard
+convolutions with a small reduction in the accuracy of the model.
+<br/>
+<img src="images/Mn3.png"><br />
+Although mobile net has reduced size, lesser no. of parameters and fast performance but gives a less state of accuracy compared to a few state of art networks and is being used in a wide variety of applications such as object detection, face recognition fine-grain classification etc.
+
 ### YOLOv3
 "You Look Only Once" is yet another and one of the fastest algorithms for object detection which is of much use when we want to detect objects in real-time.   
 A single neural network is applied to the complete image i.e., the image is divided into small regions by the network, and bounding boxes that are weighted by the predicted probabilities are calculated. In this, the CNN works with skip connections, residual blocks and as well as upsampling helping us in improvising the precision with which the detection is done.<br/>
