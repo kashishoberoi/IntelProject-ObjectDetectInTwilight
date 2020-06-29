@@ -84,10 +84,15 @@ How YOLO works is that an image is given as input and laters it split into a squ
 ### COCO Dataset
 The majority of the state of the art, modern object detection, and segmentation models are trained and tested on this Common Objects in Context Dataset, often referred to as the COCO dataset. For our problem statement, we need to detect Common Objects on roads like Car, Person, Motorcycle, Animals, Truck, Train, etc. that are available in this dataset. This dataset has a high number of images to the number of the class ratio that helps in training. The modern architectures trained on this dataset can detect the objects in low light conditions but only with deep architectures, also the complexity of the model architecture is high because of the higher number of redundant classes. 
 ### Indian Driving Dataset
+Intel in collaboration with IIIT hyderabad proposed a novel dataset for object detection and segmentation in unstructured environment. There are 34 classes and 182 drive sequences on Indian roads. The generalization issue can hinder our results, when detecting objects on Indian roads using pre-trained models, as the features of object and the backgroud scenes can vary with the change in geological and economical conditions.
 ### BDD Dataset
-
+Berkley DeepDrive Dataset, the largest video dataset for driving. The dataset posseses geographical, environment and weather diversity. But still can't be imposed on indian roads, so we decided to build the cycle-GAN, Unsupervised Image to Image Translation using this dataset to enhance our available dataset. This dataset contains a great number of Day and Night Images which is used as the base dataset for our Cycle-GAN. For simplicity, we take 6000 day images and 6000 night images that are fed to our model.
+### MWI Dataset
+The Beijing Key Lab of Intelligent Telecommunication Software and Multimedia of Beijing University of Posts and Telecommunications's MWI is a Multi-Class weather classification Image Dataset with 20K images obtained from different sources.It provides a benchmark to validate the effectiveness of a wide range of computer vision algorithms.
 ## Innovation Component
 ### Cycle-GANs
+
+### Image Classification
 
 ## Our Approach
 ### YOLO implementation
@@ -97,6 +102,17 @@ The majority of the state of the art, modern object detection, and segmentation 
 ### Cycle GAN
 ### YOLO implementation
 ### Comparitive Study Results
+
+## Citations
+### COCO Dataset
+Microsoft COCO: Common Objects in Context:Tsung-Yi Lin, Michael Maire, Serge Belongie, Lubomir Bourdev, Ross Girshick, James Hays, Pietro Perona, Deva Ramanan, C. Lawrence Zitnick, Piotr Dollár
+### IDD Dataset
+Girish Varma, Anbumani Subramanian, Anoop Namboodiri, Manmohan Chandraker & C V Jawahar - IDD: A Dataset for Exploring Problems of Autonomous Navigation in Unconstrained Environments - IEEE Winter Conf. on Applications of Computer Vision (WACV 2019)
+### BDD Dataset
+BDD100K: A Diverse Driving Dataset for Heterogeneous Multitask Learning: Fisher Yu, Haofeng Chen, Xin Wang, Wenqi Xian, Yingying Chen, Fangchen Liu, Vashisht Madhavan, Trevor Darrell
+### MWI Dataset
+Zheng Zhang, Huadong Ma. Multi-class weather classification on single images. Proc. of IEEE International Conference on Image Processing, 2015.
+Zheng Zhang, Huadong Ma, et al. Scene-free multi-class weather classification on single images. Neurocomputing, 2016, 207: 365-373.
 
 ## Credits
 This project was completed by a team of students from PES University, Kashish Oberoi, Shobhit Tuli, Anuvrat Singhal, and Anushk Misra 
